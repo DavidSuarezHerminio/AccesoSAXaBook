@@ -7,9 +7,9 @@ import org.xml.sax.*;
 
 public class BookSAXhandler extends DefaultHandler{
     @Override
-public void startElement(String uri,String localName,String qName,Attributes
+public void startElement(String uri,String localName,String qName,Attributes //el metodo es de la clase bookSAXhandler
 atts) throws SAXException{
-
+//el metodo se ejecuta cuando sax abre el xml en el analisis
 
 if(qName.equals("book")){
 System.out.print("\n"+"El id es: "+atts.getValue(atts.getQName(0)));//extrae));
